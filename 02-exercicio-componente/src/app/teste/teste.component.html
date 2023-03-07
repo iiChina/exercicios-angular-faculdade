@@ -1,0 +1,11 @@
+<div>
+  <input type="text" [(ngModel)]="mensagem" />
+  <p>{{ exibicao }}</p>
+  <button [class.vermelho]="usarCss" on-click="mostrarMensagem()">
+    Clica aí
+  </button>
+  <button (click)="mudarCor()">Morfar</button>
+</div>
+<div>
+  <app-segundo></app-segundo>
+</div>
